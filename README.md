@@ -6,7 +6,7 @@
 ---
 
 ### Name: LI, Ruoxuan
-### Student Id: 20761765
+### Student ID: 20761765
 ### Email: rliba@connect.ust.hk
 
 ---
@@ -23,9 +23,9 @@
 
     | Size        | CPU performance | Memory performance |
     | ----------- | --------------- | ------------------ |
-    | `t2.micro` |                 |                    |
-    | `t2.medium`  |                 |                    |
-    | `c5d.large` |                 |                    |
+    | `t2.micro` |  ![image](https://github.com/user-attachments/assets/7634d0ff-cb0c-4ddc-b962-0abf7dcd6da4)  |
+    | `t2.medium`  |  ![image](https://github.com/user-attachments/assets/107eb278-a3b0-4954-81bb-c5b8d77513ce) |                    |
+    | `c5d.large` |![image](https://github.com/user-attachments/assets/7357fd1f-4fc6-4e72-b11f-e08b6d3b7d80)  |                    |
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI.
 
