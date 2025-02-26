@@ -13,11 +13,11 @@
 
 ## Question 1: Measure the EC2 CPU and Memory performance
 
-1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
+1. (1 mark) Report the name of the measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
-    > Your answer goes here.
+    > The tool used for testing CPU and memory performance is sysbench, which provides simple and straightforward testing instructions for both CPU and memory. For CPU testing, the input instruction is: "_sysbench --histogram=on --threads=2 CPU run_". To test the multi-threads capacity of the CPU, the value for "_--threads_" is set to 2 to evaluate the multi-core capacity. And "_--histogram_" is set to on for an intuitive layout. 
 
-2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
+2. (1 mark) Run your measurement tool on general-purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
     In order to answer this question, you need to complete the following table by filling out blanks with the measurement results corresponding to each instance type.
 
