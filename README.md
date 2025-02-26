@@ -15,8 +15,10 @@
 
 1. (1 mark) Report the name of the measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
-    > The tool used for testing CPU and memory performance is sysbench, which provides simple and straightforward testing instructions for both CPU and memory. For CPU testing, the input instruction is: "_sysbench --histogram=on --threads=2 CPU run_". To test the multi-threads capacity of the CPU, the value for "_--threads_" is set to 2 to evaluate the multi-core capacity. And "_--histogram_" is set to on for an intuitive layout. 
+    > The tool used for testing CPU and memory performance is sysbench, which provides simple and straightforward testing instructions for both CPU and memory. For CPU testing, the input instruction is: "_sysbench --histogram=on --threads=2 CPU run_". To test the multi-threads capacity of the CPU, the value for "_--threads_" is set to 2 to evaluate the multi-core capacity. And "_--histogram_" is set to on for an intuitive layout.
+    >
     > The instruction for testing memory is "_sysbench --threads=1 --memory-block-size=1k memory run_". In this case, to avoid the influence of different CPUs, parameter "_--threads_" is set to 1 and "_--memory-block-size_" is set to 1k to reduce the burden of the CPUs.
+    >
     > The results are shown below. The CPU testing results are mainly about the latency evaluated from multiple perspectives. As for the results of memory tests, they are much simpler since they are all about the speed of data transfer.
 
 2. (1 mark) Run your measurement tool on general-purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
