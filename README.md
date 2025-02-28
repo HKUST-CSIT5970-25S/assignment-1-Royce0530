@@ -39,12 +39,12 @@
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
-    | `t3.medium` - `t3.medium` |                |          |
-    | `m5.large` - `m5.large`   |                |          |
-    | `c5n.large` - `c5n.large` |                |          |
-    | `t3.medium` - `c5n.large` |                |          |
-    | `m5.large` - `c5n.large`  |                |          |
-    | `m5.large` - `t3.medium`  |                |          |
+    | `t3.medium` - `t3.medium` |![image](https://github.com/user-attachments/assets/9b9892d0-56f2-4913-a5e8-4a68346315f7)|![image](https://github.com/user-attachments/assets/1ea11f38-e3f3-4aa4-a4ea-c60b7295b076)|
+    | `m5.large` - `m5.large`   |![image](https://github.com/user-attachments/assets/1d8ed7c5-ec02-4f1a-9978-28e2e4f38b3b)|![image](https://github.com/user-attachments/assets/e16a076f-53d5-49fd-8dd1-3f44c3979aa4)|
+    | `c5n.large` - `c5n.large` |![image](https://github.com/user-attachments/assets/d27d9ee3-89e8-458f-8966-05425f86c949)|![image](https://github.com/user-attachments/assets/7cdd6449-302b-443d-b469-8420afae8780)|
+    | `t3.medium` - `c5n.large` |![image](https://github.com/user-attachments/assets/185b5cd4-5f72-4432-bb48-06c165c66cf2)|![image](https://github.com/user-attachments/assets/caac1572-5d40-491e-9005-cc6d9d9612fd)|
+    | `m5.large` - `c5n.large`  |![image](https://github.com/user-attachments/assets/5e40b5f3-3372-4df6-8e58-fca1253873c8)|![image](https://github.com/user-attachments/assets/a122c521-66dd-4d22-ad1c-aa03ff57367b)|
+    | `m5.large` - `t3.medium`  |![image](https://github.com/user-attachments/assets/276d9415-017a-40f1-81e6-877b0f5aeb7e)|![image](https://github.com/user-attachments/assets/9fef7226-269a-4351-8f1c-bb2110a9da83)|
 
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
